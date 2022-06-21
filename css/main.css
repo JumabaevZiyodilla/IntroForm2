@@ -1,0 +1,205 @@
+:root {
+    --white-color: #fff;
+    --main-green-color: #38cc8b;
+    --main-blue-color: #5e54a4;
+    --main-black-color: #3d3b48;
+    --black-color: #3d3b48;
+    --boxshadow-color: #00000025;
+    --input-border-color: #5e54a4;
+    --placeholder-color: #3d3b48bf;
+    --tiny-color: #ff7979;
+    --btn-boxshadow-color: #00000017;
+    --btn-hover-color: #77e2b3;
+    --link-color: #bab7d4;
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-700.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-700.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.learn {
+    padding: 121px 0px;
+    background-image: url("../img/Sitebackground.svg");
+}
+
+.learn-box-primary {
+    display: flex;
+    align-items: center;
+}
+
+.learn-box {
+    width: 525px;
+    margin-right: 45px;
+}
+
+.learn-title {
+    margin: 0px;
+    margin-bottom: 11px;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    letter-spacing: -0.520833px;
+    color: var(--white-color);
+}
+
+.learn-text {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.form-box {
+    width: 540px;
+}
+
+.form-tiny-box {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 17px 109px 17px 110px;
+    text-align: center;
+    background-color: var(--main-blue-color);
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px var(--boxshadow-color);
+
+}
+
+.form-link {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--white-color);
+    letter-spacing: 0.267857px;
+    text-decoration: none;
+}
+
+.form-link-tiny {
+    font-weight: 400;
+}
+
+.learn-form {
+    padding: 40px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px var(--boxshadow-color);
+}
+
+.input-name {
+    width: 425px;
+    margin-bottom: 6px;
+    padding: 15px 0px 15px 32px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--black-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    letter-spacing: 0.25px;
+}
+
+.input-name::placeholder {
+    font-weight: 600;
+    color: var(--placeholder-color);
+}
+
+.input-name:not(:placeholder-shown):not(:focus):valid {
+    background-image: url("../img/check.png");
+    background-position: right 27px center;
+    background-repeat: no-repeat;
+}
+
+.input-name:not(:placeholder-shown):not(:focus):invalid {
+    background-image: url("../img/oval.svg");
+    background-repeat: no-repeat;
+    background-position: right 27px center;
+    border: 1px solid var(--tiny-color);
+}
+
+.input-name:not(:placeholder-shown):not(:focus):invalid+.input-tiny {
+    opacity: 1;
+}
+
+.input-tiny {
+    display: block;
+    margin-bottom: 19px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: right;
+    color: var(--tiny-color);
+    opacity: 0;
+}
+
+.learn-btn {
+    padding: 15px 125px 15px 126px;
+    font-size: 15px;
+    line-height: 26px;
+    background-color: var(--main-green-color);
+    border-radius: 5px;
+    border-color: transparent;
+    color: var(--white-color);
+    box-shadow: inset 0px -4px 0px var(--btn-boxshadow-color);
+    letter-spacing: 1px;
+}
+
+.learn-btn:hover {
+    background: var(--btn-hover-color);
+    border-radius: 5px;
+    box-shadow: inset 0px -4px 0px var(--btn-boxshadow-color);
+}
+
+.learn-form-link {
+    display: block;
+    font-size: 11px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.learn-form-tiny {
+    width: 369px;
+    font-weight: 700;
+    color: var(--tiny-color);
+}
